@@ -6,6 +6,9 @@ module.exports = {
       colors: {
         'yc-red': '#B70005',
       },
+      backgroundImage: {
+        'hero': "url('../img/pattern.svg')",
+      },
       screens: {
         'widescreen': { 'raw': '(min-aspect-ratio: 3/2)' },
         'tallscreen': { 'raw': '(min-aspect-ratio: 13/20)' },

@@ -12,7 +12,7 @@
   <title>Asesoría Latina - Inicio</title>
 </head>
 <body class="min-h-screen bg-slate-50 dark:bg-[#222424] dark:text-white">
-  <header class="bg-yc-red text-white sticky top-0 z-10">
+  <header class="bg-slate-100 dark:bg-yc-red text-yc-red dark:text-white sticky top-0 z-10">
     <section class="max-w-5xl mx-auto p-4 flex justify-between items-center">
       <div class="flex items-center">
         <img src="./img/logo-yc.png" alt="logo" width="40">
@@ -20,13 +20,13 @@
       </div>
       <div>
         <button id="hamburguer-button" class="text-3xl md:hidden cursor-pointer relative w-8 h-8">
-          <div class="bg-white w-8 h-1 rounded absolute top-4 -mt-0 5 transition-all duration-500 before:content-[''] before:bg-white before:w-8 before:h-1 before:rounded before:absolute before:-translate-x-4 before:-translate-y-3 before:transition-all before:duration-500 after:content-[''] after:bg-white after:w-8 after:h-1 after:rounded after:absolute after:-translate-x-4 after:translate-y-3 after:transition-all after:duration-500"></div>
+          <div class="bg-yc-red dark:bg-white w-8 h-1 rounded absolute top-4 -mt-0 5 transition-all duration-500 before:content-[''] before:bg-yc-red dark:before:bg-white before:w-8 before:h-1 before:rounded before:absolute before:-translate-x-4 before:-translate-y-3 before:transition-all before:duration-500 after:content-[''] after:bg-yc-red after:dark:bg-white after:w-8 after:h-1 after:rounded after:absolute after:-translate-x-4 after:translate-y-3 after:transition-all after:duration-500"></div>
         </button>
         <nav class="hidden md:block space-x-8 text-xl" aria-label="main">
           <a href="#link1" class="hover:opacity-90">Link 1</a>
           <a href="#link2" class="hover:opacity-90">Link 2</a>
           <a href="#link3" class="hover:opacity-90">Link 3</a>
-          <a href="#link4" class="hover:opacity-90">Link 4</a>
+          <button class="bg-yc-red dark:bg-slate-50 text-white dark:text-yc-red py-2 px-3 rounded-lg hover:opacity-90">Asesoría Gratuita</button>
         </nav>
       </div>
     </section>
@@ -41,113 +41,79 @@
       </nav>
     </section>
   </header>
-  <main class="max-w-5xl mx-auto">
-    <section id="hero" class="flex flex-col-reverse justify-center sm:flex-row p-6 items-center gap-8 sm:gap-10 mb-12 scroll-mt-40 widescreen:section-min-height tallscreen:section-min-height">
-      <article class="sm:w-1/2">
-        <h2 class="max-w-md text-4xl font-bold text-center sm:text-5xl sm:text-left text-slate-900 dark:text-white">
-          Asesoría Latina
-        </h2>
-        <p class="max-w-md text-2xl mt-4 text-center sm:text-left text-slate-700 dark:text-slate-400">
-          Una descripción que comunique lo que hacemos y cómo los beneficaremos. Necesitamos transmitir confianza y experiencia en lo que hacemos.
-        </p>
-        <div class="mt-8 flex gap-4">
-          <button href="#link4" class="bg-yc-red py-2 px-3 text-lg rounded-xl hover:opacity-90 text-white w-1/2">Asesoría Gratuita</button>
-          <button href="#link4" class="bg-slate-200 dark:bg-slate-50 text-yc-red py-4 px-3 text-xl rounded-lg hover:opacity-80 w-1/2 border border-yc-red">Testimonios</button>
+  <main class="mx-auto">
+    <div class="bg-hero dark:bg-none dark:bg-[#363939]">
+      <section id="hero" class="max-w-5xl mx-auto flex flex-col-reverse justify-center sm:flex-row p-6 items-center gap-8 sm:gap-10 mb-12 scroll-mt-40 widescreen:section-min-height tallscreen:section-min-height">
+        <article class="sm:w-1/2">
+          <h2 class="max-w-md text-4xl font-bold text-center sm:text-5xl sm:text-left text-slate-900 dark:text-white">
+            Asesoría Latina
+          </h2>
+          <p class="max-w-md text-2xl mt-4 text-center sm:text-left text-slate-700 dark:text-slate-400">
+            Una descripción que comunique lo que hacemos y cómo los beneficaremos. Necesitamos transmitir confianza y experiencia en lo que hacemos.
+          </p>
+          <div class="mt-8 flex gap-4">
+            <button href="#link4" class="bg-yc-red py-2 px-3 text-lg rounded-xl hover:opacity-90 text-white w-1/2">Asesoría Gratuita</button>
+            <button href="#link4" class="bg-slate-200 dark:bg-slate-50 text-yc-red py-4 px-3 text-xl rounded-lg hover:opacity-80 w-1/2 border border-yc-red">Testimonios</button>
+          </div>
+        </article>
+        <div class="w-1/2 h-60 sm:h-80 grid place-content-center border-solid border-4 border-black dark:border-white rounded-xl bg-slate-200">
+          <img width="150" src="./img/image-icon.svg" alt="Pendiente imagen">
         </div>
-      </article>
-      <div class="w-1/2 h-60 sm:h-80 grid place-content-center border-solid border-4 border-black dark:border-white rounded-xl bg-slate-200">
-        <img width="150" src="./img/image-icon.svg" alt="Pendiente imagen">
-      </div>
-    </section>
+      </section>
+    </div>
 
     <hr class="mx-auto bg-black dark:bg-white w-1/2" />
 
-    <section id="services" class="p-6 my-12 scroll-mt-20 widescreen:section-min-height tallscreen:section-min-height">
+    <section id="services" class="max-w-5xl mx-auto p-6 my-12 scroll-mt-20 widescreen:section-min-height tallscreen:section-min-height">
       <h2 class="text-3xl font-bold text-left sm:text-5xl mb-6 text-slate-900dark:text-white">
         Descripción de sección
       </h2>
       <p class="text-2xl mt-4 sm:text-left text-left text-slate-700 dark:text-slate-400">Lorem ipsum dolor sit dunt ut labore et dolo magna aliqua. Duis aute irure dolor in reprehenderit in voluptate</p>
       <div class="mx-auto my-14 flex flex-col sm:flex-row items-center gap-14">
-        <figure class="w-2/3 sm:w-5/6 flex flex-col items-center border border-slate-900 dark:border-gray-100 bg-white dark:bg-slate-200 py-6 px-2 rounded-3xl shadow-xl">
-          <img src="./img/image-icon.svg" alt="Pendiente imagen" class="w-1/2 mb-6">
-          <h3 class="text-3xl text-center text-slate-900 dark:text-white">
-            Servicio
-          </h3>
-          <p class="hidden sm:block text-3xl text-center mt-2 text-slate-500 dark:text-slate-400">
-            Descripción 1
-          </p>
-          <p class="sm:hidden text-2xl text-center mt-2 text-slate-500 dark:text-slate-400">
-            Descripción 2
-          </p>
+        <figure class="w-2/3 sm:w-5/6 flex flex-col items-center border border-slate-900 hover:border-yc-red dark:border-gray-100 bg-white dark:bg-slate-200 py-6 px-2 rounded-3xl shadow-xl">
+          <img src="./img/image-icon.svg" alt="Pendiente imagen" class="w-1/3 mb-6">
+          <figcaption class="text-2xl text-center text-slate-900 hover:text-yc-red">
+            Certificados digitales
+          </figcaption>
         </figure>
-        <figure class="w-2/3 sm:w-5/6 flex flex-col items-center border border-slate-900 dark:border-gray-100 bg-white dark:bg-slate-200 py-6 px-2 rounded-3xl shadow-xl">
-          <img src="./img/image-icon.svg" alt="Pendiente imagen" class="w-1/2 mb-6">
-          <h3 class="text-3xl text-center text-slate-900 dark:text-white">
-            Servicio
-          </h3>
-          <p class="hidden sm:block text-3xl text-center mt-2 text-slate-500 dark:text-slate-400">
-            Descripción 1
-          </p>
-          <p class="sm:hidden text-2xl text-center mt-2 text-slate-500 dark:text-slate-400">
-            Descripción 2
-          </p>
+        <figure class="w-2/3 sm:w-5/6 flex flex-col items-center border border-slate-900 hover:border-yc-red dark:border-gray-100 bg-white dark:bg-slate-200 py-6 px-2 rounded-3xl shadow-xl">
+          <img src="./img/image-icon.svg" alt="Pendiente imagen" class="w-1/3 mb-6">
+          <figcaption class="text-2xl text-center text-slate-900 hover:text-yc-red">
+            Seguridad social
+          </figcaption>
         </figure>
-        <figure class="w-2/3 sm:w-5/6 flex flex-col items-center border border-slate-900 dark:border-gray-100 bg-white dark:bg-slate-200 py-6 px-2 rounded-3xl shadow-xl">
-          <img src="./img/image-icon.svg" alt="Pendiente imagen" class="w-1/2 mb-6">
-          <h3 class="text-3xl text-center text-slate-900 dark:text-white">
-            Servicio
-          </h3>
-          <p class="hidden sm:block text-3xl text-center mt-2 text-slate-500 dark:text-slate-400">
-            Descripción 1
-          </p>
-          <p class="sm:hidden text-2xl text-center mt-2 text-slate-500 dark:text-slate-400">
-            Descripción 2
-          </p>
+        <figure class="w-2/3 sm:w-5/6 flex flex-col items-center border border-slate-900 hover:border-yc-red dark:border-gray-100 bg-white dark:bg-slate-200 py-6 px-2 rounded-3xl shadow-xl">
+          <img src="./img/image-icon.svg" alt="Pendiente imagen" class="w-1/3 mb-6">
+          <figcaption class="text-2xl text-center text-slate-900 hover:text-yc-red">
+            Citas
+          </figcaption>
         </figure>
       </div>
       <div class="mx-auto my-14 flex flex-col sm:flex-row items-center gap-14">
-        <figure class="w-2/3 sm:w-5/6 flex flex-col items-center border border-slate-900 dark:border-gray-100 bg-white dark:bg-slate-200 py-6 px-2 rounded-3xl shadow-xl">
-          <img src="./img/image-icon.svg" alt="Pendiente imagen" class="w-1/2 mb-6">
-          <h3 class="text-3xl text-center text-slate-900 dark:text-white">
-            Servicio
-          </h3>
-          <p class="hidden sm:block text-3xl text-center mt-2 text-slate-500 dark:text-slate-400">
-            Descripción 1
-          </p>
-          <p class="sm:hidden text-2xl text-center mt-2 text-slate-500 dark:text-slate-400">
-            Descripción 2
-          </p>
+        <figure class="w-2/3 sm:w-5/6 flex flex-col items-center border border-slate-900 hover:border-yc-red dark:border-gray-100 bg-white dark:bg-slate-200 py-6 px-2 rounded-3xl shadow-xl">
+          <img src="./img/image-icon.svg" alt="Pendiente imagen" class="w-1/3 mb-6">
+          <figcaption class="text-2xl text-center text-slate-900 hover:text-yc-red">
+            Arraigos
+          </figcaption>
         </figure>
-        <figure class="w-2/3 sm:w-5/6 flex flex-col items-center border border-slate-900 dark:border-gray-100 bg-white dark:bg-slate-200 py-6 px-2 rounded-3xl shadow-xl">
-          <img src="./img/image-icon.svg" alt="Pendiente imagen" class="w-1/2 mb-6">
-          <h3 class="text-3xl text-center text-slate-900 dark:text-white">
-            Servicio
-          </h3>
-          <p class="hidden sm:block text-3xl text-center mt-2 text-slate-500 dark:text-slate-400">
-            Descripción 1
-          </p>
-          <p class="sm:hidden text-2xl text-center mt-2 text-slate-500 dark:text-slate-400">
-            Descripción 2
-          </p>
+        <figure class="w-2/3 sm:w-5/6 flex flex-col items-center border border-slate-900 hover:border-yc-red dark:border-gray-100 bg-white dark:bg-slate-200 py-6 px-2 rounded-3xl shadow-xl">
+          <img src="./img/image-icon.svg" alt="Pendiente imagen" class="w-1/3 mb-6">
+          <figcaption class="text-2xl text-center text-slate-900 hover:text-yc-red">
+            Residencias
+          </figcaption>
         </figure>
-        <figure class="w-2/3 sm:w-5/6 flex flex-col items-center border border-slate-900 dark:border-gray-100 bg-white dark:bg-slate-200 py-6 px-2 rounded-3xl shadow-xl">
-          <img src="./img/image-icon.svg" alt="Pendiente imagen" class="w-1/2 mb-6">
-          <h3 class="text-3xl text-center text-slate-900 dark:text-white">
-            Servicio
-          </h3>
-          <p class="hidden sm:block text-3xl text-center mt-2 text-slate-500 dark:text-slate-400">
-            Descripción 1
-          </p>
-          <p class="sm:hidden text-2xl text-center mt-2 text-slate-500 dark:text-slate-400">
-            Descripción 2
-          </p>
+        <figure class="w-2/3 sm:w-5/6 flex flex-col items-center border border-slate-900 hover:border-yc-red dark:border-gray-100 bg-white dark:bg-slate-200 py-6 px-2 rounded-3xl shadow-xl">
+          <img src="./img/image-icon.svg" alt="Pendiente imagen" class="w-1/3 mb-6">
+          <figcaption class="text-2xl text-center text-slate-900 hover:text-yc-red">
+            Renovaciones
+          </figcaption>
         </figure>
       </div>
     </section>
 
     <hr class="mx-auto bg-black dark:bg-white w-1/2" />
 
-    <section id="testimonials" class="p-6 my-12 scrooll-mt-20 sidescreen:section-min-height tallscreen:section-min-height">
+    <section id="testimonials" class="max-w-5xl mx-auto p-6 my-12 scrooll-mt-20 sidescreen:section-min-height tallscreen:section-min-height">
       <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">
         Testimonios
       </h2>
@@ -203,7 +169,7 @@
 
   </main>
   <footer id="footer" class="bg-yc-red text-white text-xl">
-    <section class="max-w-4xl mx-auto p-4 flex flex-col sm:flex-row sm:justify-between">
+    <section class="max-w-5xl mx-auto p-4 flex flex-col sm:flex-row sm:justify-between">
       <address>
         <h2>Acme Rocket-Powered Products, Inc.</h2>
         555 Astro Way<br />
